@@ -12,10 +12,10 @@ Technical University of Munich
 </p>
 
 <p align="center">
-    <img src = https://github.com/Ryoto-Kato/IntuitiveAnimationControl/assets/127607089/31ee2b5b-484a-47c0-bc7f-6077981eeef3 alt="Results"/>
+    <img src = https://github.com/Ryoto-Kato/IntuitiveAnimationControl/assets/127607089/31ee2b5b-484a-47c0-bc7f-6077981eeef3 width="10000" alt="Results"/>
 </p>
 
-We presented deformation learning of a photorealistic head avatar using structured 3D Gaussians for intuitive control and real-time realistic animation rendering. Our deformation learning can produce global deformation components that support rough fitting as a foundation for plausible facial expression, as well as local deformation components that allow for more comprehensive modelling of facial expression. Our local deformation components, in particular, have the potential to be used for the automatic facial expression fitting task by finding a plausible deformation at an arbitrary point on the face using a probabilistic approach and capturing latent deformation space with a Gaussian distribution mixture in our deformation learning.
+We present the deformation learning of a photorealistic head avatar using structured 3D Gaussians for intuitive control and real-time realistic animation rendering. Our deformation learning can produce global deformation components that support rough fitting as a foundation for plausible facial expression and local deformation components that allow for more comprehensive facial expression modelling. Our local deformation components, in particular, solve discontinuity artefacts in animations by introducing our smooth sparsity assignment strategy.
 
 [paper (coming soon)]()
 <!-- \[[paper](./doc_sources/3DSSL_finalpaper.pdf)\] -->

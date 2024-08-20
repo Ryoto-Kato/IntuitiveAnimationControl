@@ -1,10 +1,8 @@
 
 # Deformation Learning with structured 3D Gaussian for Intuitive Animation of Photorealistic Head Avatars
 
-**> code comming soon...**
-
 <p align="center">
-Ryoto Kato
+Ryoto Kato, Tobias Kirschstein, and Matthias Nießner 
 </p>
 
 <p align="center">
@@ -17,8 +15,8 @@ Technical University of Munich
 
 We present the deformation learning of a photorealistic head avatar using structured 3D Gaussians for intuitive control and real-time realistic animation rendering. Our deformation learning can produce global deformation components that support rough fitting as a foundation for plausible facial expression and local deformation components that allow for more comprehensive facial expression modelling. Our local deformation components, in particular, solve discontinuity artefacts in animations by introducing our smooth sparsity assignment strategy.
 
-[paper (coming soon)]()
-<!-- \[[paper](./doc_sources/3DSSL_finalpaper.pdf)\] -->
+##### Acknowledgement
+This project is done in my Practicum in WS2324 at TUM: [Visual Computing and AI Group](https://www.niessnerlab.org/index.html). I would like to thank [Tobias Kirschstein](https://tobias-kirschstein.github.io/) and Prof. Dr Matthias Nießner for such a great opportunity and for providing resources and support. I would also like to thank Meta for such a rich human face dataset and for making it open-source.
 
 # Pipeline overview
 ![Pipeline Overview](./doc_sources/Pipeline-Overview.png)

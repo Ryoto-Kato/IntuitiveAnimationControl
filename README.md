@@ -15,8 +15,24 @@ Technical University of Munich
 
 We present the deformation learning of a photorealistic head avatar using structured 3D Gaussians for intuitive control and real-time realistic animation rendering. Our deformation learning can produce global deformation components that support rough fitting as a foundation for plausible facial expression and local deformation components that allow for more comprehensive facial expression modelling. Our local deformation components, in particular, solve discontinuity artefacts in animations by introducing our smooth sparsity assignment strategy.
 
-##### Acknowledgement
+## Acknowledgement
 This project is done in my Practicum in WS2324 at TUM: [Visual Computing and AI Group](https://www.niessnerlab.org/index.html). I would like to thank [Tobias Kirschstein](https://tobias-kirschstein.github.io/) and Prof. Dr Matthias Nießner for such a great opportunity and for providing resources and support. I would also like to thank Meta for such a rich human face dataset and for making it open-source.
+
+## Cite
+Please kindly cite our repository if you find our software or algorithm useful for your research.
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{ryotok2024IAC,
+  title   = "IAC: Intuitive Animation Control",
+  author  = {Kato, Ryoto and Kirschstein, Tobias and Schoneveld, and Nie{\ss}ner, Matthias},
+  year    = "2024",
+  month   = "Octorber",
+  url     = "https://github.com/Ryoto-Kato/IntuitiveAnimationControl"
+}</code></pre>
+  </div>
+</section>
 
 # Pipeline overview
 ![Pipeline Overview](./doc_sources/Pipeline-Overview.png)

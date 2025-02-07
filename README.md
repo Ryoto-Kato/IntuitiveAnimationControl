@@ -26,7 +26,7 @@ Please kindly cite our repository if you find our software or algorithm useful f
     <h2 class="title">BibTeX</h2>
     <pre><code>@misc{ryotok2024IAC,
   title   = "IAC: Intuitive Animation Control",
-  author  = {Kato, Ryoto and Kirschstein, Tobias and Schoneveld, and Nie{\ss}ner, Matthias},
+  author  = {Kato, Ryoto and Kirschstein, Tobias and Nie{\ss}ner, Matthias},
   year    = "2024",
   month   = "Octorber",
   url     = "https://github.com/Ryoto-Kato/IntuitiveAnimationControl"

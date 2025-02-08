@@ -40,6 +40,7 @@ Please kindly cite our repository if you find our software or algorithm useful f
 # Requirements
 - Linux x86-64 (Debian is preferrable)
 - python (conda)
+- CUDA 11.8 / Driver Version: 550.54.15 (RTX3080)
 - GPU 10GB VRAM (at least 8GB)
     - must fulfil requirements for 3D Gaussian splatting pipelines
 
@@ -48,7 +49,8 @@ Please kindly cite our repository if you find our software or algorithm useful f
 ```sh
 conda create --name ica --file ica.yml
 conda activate 3dsrf
-# follow the 3DGS official installation
+# follow the 3DGS official installation TO INSTALL SUBMODULES
+# place them into ./DeformationLearning_3DGS/submodules
 ```
 
 #### Reference: an adaption of 3DGS to non-zero principle point offsets: [issue #144](https://github.com/graphdeco-inria/gaussian-splatting/issues/144#issuecomment-1938504456), officially apply to the official 3DGS implementation

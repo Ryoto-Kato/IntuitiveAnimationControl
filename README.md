@@ -46,9 +46,14 @@ Please kindly cite our repository if you find our software or algorithm useful f
 # Setup
 ## set up conda env
 ```sh
-conda create --name 3dsrf --file requirements.txt
+conda create --name ica --file ica.yml
 conda activate 3dsrf
+# follow the 3DGS official installation
 ```
+
+#### Reference: an adaption of 3DGS to non-zero principle point offsets: [issue #144](https://github.com/graphdeco-inria/gaussian-splatting/issues/144#issuecomment-1938504456), officially apply to the official 3DGS implementation
+
+
 ## Multi-face dataset setup
 ### Download tracked meshes (66 expressions) and multi-views (38 cameras) of the target person (e.g., 6795937)
 - Follow the guide to download them from [official-repo](https://github.com/facebookresearch/multiface).

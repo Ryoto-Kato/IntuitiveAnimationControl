@@ -1,0 +1,124 @@
+# verts 5509
+Reading hdf5: ../../../gaussian-splatting/output/f336a291-bnotALLcam/f336a291-bnotALLcam_datamat_5509.hdf5
+Contents of the hdf5: ../../../gaussian-splatting/output/f336a291-bnotALLcam/f336a291-bnotALLcam_datamat_5509.hdf5
+The number of verts: 5509
+The number of samples: 330
+0: xyz
+(330, 16527)
+0:f_dc
+(330, 16527)
+5:rotation
+(330, 22036)
+6:scale
+(330, 16527)
+Final data mat shape: (330, 71617)
+list of attribute in dataMat
+['xyz', 'f_dc', 'rotation', 'scale']
+list of dimension in dataMat for each attribute
+[16527, 16527, 22036, 16527]
+loading facemask from /home/rkato/3DSSL-WS23_IntuitiveAnimation/src/tools/../samples/memory
+facemask shape: (5509, 3)
+-------------3dgs-------------------
+The number of components: 330
+Sigma shape: (330, 330)
+Gamma shape: (330, 71617)
+W shape: (330, 330)
+C shape: (330, 71617)
+Saving PCA and MBSCPA at /home/rkato/3DSSL-WS23_IntuitiveAnimation/src/tools/../samples/deformation_components/trained_3dgs/3dgs_5509_ALL_5perExp_trimesh_dcs.hdf5
+dict_keys(['3dgs'])
+['MEAN', 'STD', 'dataMat', 'dim_info', 'faceMask', 'mbspca_C', 'mbspca_W', 'pca_C', 'pca_W', 'tris']
+(330, 330)
+(330, 71617)
+(330, 330)
+(330, 71617)
+['xyz', 'f_dc', 'rotation', 'scale']
+
+# verts 21954
+Reading hdf5: ../../../gaussian-splatting/output/f336a291-bnotALLcam/f336a291-bnotALLcam_datamat_21954.hdf5
+Contents of the hdf5: ../../../gaussian-splatting/output/f336a291-bnotALLcam/f336a291-bnotALLcam_datamat_21954.hdf5
+The number of verts: 21954
+The number of samples: 330
+0: xyz
+(330, 65862)
+0:f_dc
+(330, 65862)
+5:rotation
+(330, 87816)
+6:scale
+(330, 65862)
+Final data mat shape: (330, 285402)
+list of attribute in dataMat
+['xyz', 'f_dc', 'rotation', 'scale']
+list of dimension in dataMat for each attribute
+[65862, 65862, 87816, 65862]
+-------------3dgs-------------------
+The number of components: 330
+Sigma shape: (330, 330)
+Gamma shape: (330, 285402)
+W shape: (330, 330)
+C shape: (330, 285402)
+Saving PCA and MBSCPA at /home/rkato/3DSSL-WS23_IntuitiveAnimation/src/tools/../samples/deformation_components/trained_3dgs/3dgs_21954_ALL_5perExp_trimesh_dcs.hdf5
+dict_keys(['3dgs'])
+['MEAN', 'STD', 'dataMat', 'dim_info', 'mbspca_C', 'mbspca_W', 'pca_C', 'pca_W', 'tris']
+(330, 330)
+(330, 285402)
+(330, 330)
+(330, 285402)
+['xyz', 'f_dc', 'rotation', 'scale']
+
+# verts 87652
+Reading hdf5: ../../../gaussian-splatting/output/f336a291-bnotALLcam/f336a291-bnotALLcam_datamat_87652.hdf5
+Contents of the hdf5: ../../../gaussian-splatting/output/f336a291-bnotALLcam/f336a291-bnotALLcam_datamat_87652.hdf5
+The number of verts: 87652
+The number of samples: 330
+0: xyz
+(330, 262956)
+0:f_dc
+(330, 262956)
+5:rotation
+(330, 350608)
+6:scale
+(330, 262956)
+Final data mat shape: (330, 1139476)
+list of attribute in dataMat
+['xyz', 'f_dc', 'rotation', 'scale']
+list of dimension in dataMat for each attribute
+[262956, 262956, 350608, 262956]
+loading facemask from /home/rkato/3DSSL-WS23_IntuitiveAnimation/src/tools/../samples/memory
+facemask shape: (87652, 3)
+-------------3dgs-------------------
+The number of components: 330
+Sigma shape: (330, 330)
+Gamma shape: (330, 1139476)
+W shape: (330, 330)
+C shape: (330, 1139476)
+Saving PCA and MBSCPA at /home/rkato/3DSSL-WS23_IntuitiveAnimation/src/tools/../samples/deformation_components/trained_3dgs/3dgs_87652_ALL_5perExp_trimesh_dcs.hdf5
+dict_keys(['3dgs'])
+['MEAN', 'STD', 'dataMat', 'dim_info', 'faceMask', 'mbspca_C', 'mbspca_W', 'pca_C', 'pca_W', 'tris']
+(330, 330)
+(330, 1139476)
+(330, 330)
+(330, 1139476)
+['xyz', 'f_dc', 'rotation', 'scale']
+
+# tracked mesh
+Loading meshes....
+Construction data matrix X....
+done
+5509
+loading facemask from /home/rkato/3DSSL-WS23_IntuitiveAnimation/src/tools/../samples/memory
+facemask shape: (5509, 3)
+-------------trackedMesh-------------------
+The number of components: 330
+Sigma shape: (330, 330)
+Gamma shape: (330, 16527)
+W shape: (330, 330)
+C shape: (330, 16527)
+Saving PCA and MBSCPA at /home/rkato/3DSSL-WS23_IntuitiveAnimation/src/tools/../samples/deformation_components/tracked_mesh/f336a291-bnotALLcam_datamat_5509.hdf5
+dict_keys(['trackedMesh'])
+['MEAN', 'STD', 'dataMat', 'dim_info', 'faceMask', 'mbspca_C', 'mbspca_W', 'pca_C', 'pca_W', 'tris']
+(330, 330)
+(330, 16527)
+(330, 330)
+(330, 16527)
+['trackedMesh']

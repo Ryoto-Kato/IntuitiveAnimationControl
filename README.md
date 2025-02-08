@@ -16,7 +16,7 @@ Technical University of Munich
 We present the deformation learning of a photorealistic head avatar using structured 3D Gaussians for intuitive control and real-time realistic animation rendering. Our deformation learning can produce global deformation components that support rough fitting as a foundation for plausible facial expression and local deformation components that allow for more comprehensive facial expression modelling. Our local deformation components, in particular, solve discontinuity artefacts in animations by introducing our smooth sparsity assignment strategy.
 
 ## Acknowledgement
-This project is done in my Practicum in WS2324 at TUM: [Visual Computing and AI Group](https://www.niessnerlab.org/index.html). I would like to thank [Tobias Kirschstein](https://tobias-kirschstein.github.io/) and Prof. Dr Matthias Nießner for such a great opportunity and for providing resources and support. I would also like to thank Meta for such a rich human face dataset and for making it open-source.
+This project is done in my Practicum in WS2324 at TUM: [Visual Computing and AI Group](https://www.niessnerlab.org/index.html). I would like to thank [Tobias Kirschstein](https://tobias-kirschstein.github.io/) and Prof. Dr Matthias Nießner for such a great opportunity and for providing resources and support. I would also like to thank Meta for such a rich human face dataset and for making it open-source. Additionally, I would like to thank all contributors/authors of related works: [3DGS](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/)
 
 ## Cite
 Please kindly cite our repository if you find our software or algorithm useful for your research.
@@ -44,13 +44,15 @@ Please kindly cite our repository if you find our software or algorithm useful f
 - GPU 10GB VRAM (at least 8GB)
     - must fulfil requirements for 3D Gaussian splatting pipelines
 
-# Setup
+# I: Setup
 ## set up conda env
 ```sh
+git clone <html>
 conda create --name ica --file ica.yml
 conda activate 3dsrf
 # follow the 3DGS official installation TO INSTALL SUBMODULES
 # place them into ./DeformationLearning_3DGS/submodules
+# ./DeformationLearning_3DGS follows the official 3DGS repo (except for adaption ↓） 
 ```
 
 #### Reference: an adaption of 3DGS to non-zero principle point offsets: [issue #144](https://github.com/graphdeco-inria/gaussian-splatting/issues/144#issuecomment-1938504456), officially apply to the official 3DGS implementation
@@ -112,7 +114,7 @@ conda activate 3dsrf
 - You can generate a facemask by using `./samples` and `GetMask_mesh.ipynb`
 - Visualization of a face mesh and its facemask can be done with `./src/tools/FaceMask_and_Mesh_visualizer.py`
 
-## Deformation Learning with structured 3D Gaussians
+# II: Deformation Learning with structured 3D Gaussians
 ### Setting up 3D Gaussian splatting pipeline by referring
 1. Clone `gaussian-splatting` from the [official repo](https://github.com/graphdeco-inria/gaussian-splatting).
     - set up environment for original `gaussian-splatting`
@@ -137,10 +139,10 @@ conda activate 3dsrf
 conda activate gaussian_splatting
 
 python original_train.py #check options in the source code
-tensorboad --logdir=path_to_output
+tensorboard --logdir=path_to_output
 ```
 
-## Deformation components analysis (global/local) 
+# III: Deformation components analysis (global/local) 
 ### How to obtain the global/local deformation components given trained 3D Gaussians (.pkl)
 1. Serialized trained 3D Gaussian properties in .pkl (use ./src/utils/pickel_io.py)
 2. Convert the .pkl to Hierarchical data format (.hdf5)
@@ -238,7 +240,7 @@ tensorboad --logdir=path_to_output
 python upsampling_DCs.py --numGauss=21954
 ```
 
-## Animation
+# IV: Animation
 ```sh
 # Activate the conda env
 conda activate gaussian_splatting
@@ -250,7 +252,7 @@ python original_render.py --path_to_hdf5="./output/f336a291-bnotALLcam/3dgs_8765
 python original_render.py --path_to_hdf5="./output/f336a291-bnotALLcam/gauss_3dgs_87652_xyz_SLDC_5perExp_trimesh_dcs" --path_to_saveIMG=./output/f336a291-bnotALLcam/blendshape_result --dc_type=sldc
 ```
 
-## Evaluation
+# V: Evaluation
 - Comparison between 4 methods
     - **Ours (global)**: 3dgs_87652_ALL_5perExp_trimesh_dcs.hdf5
     - **COG-PCA**: 3dgs_87652_xyz_PCAMBSPCA_5perExp_trimesh_dcs.hdf5
